@@ -1,0 +1,9 @@
+#!/bin/env
+HOST="https://health.roomit.xyz"
+HOME_VALIDATOR=""
+DELEGATOR_ADDRESS=''
+VALIDATOR_ADDRESS=''
+VALIDATOR_CONF=""
+VALIDATOR_RPC="tcp://127.0.0.1:16703"
+CHAIN_ID=""
+BIN=""

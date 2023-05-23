@@ -6,17 +6,9 @@
 # Let's drink coffee and talk about blockchain
 #
 
-set -e
-HOME_VALIDATOR=""
-DELEGATOR_ADDRESS=''
-VALIDATOR_ADDRESS=''
-VALIDATOR_CONF=""
-VALIDATOR_RPC="tcp://127.0.0.1:16703"
-CHAIN_ID=""
-BIN=""
+source $(pwd)/kuma-env
 
-#### URL
-HOST="https://health.roomit.xyz"
+#### KUMA CONFIG
 TOKEN=""
 
 

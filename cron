@@ -1,0 +1,8 @@
+SHELL=/bin/bash
+BLOCKCHAIN=""
+PATH=/usr/sbin:/usr/bin:/sbin:/bin:/app/${BLOCKCHAIN}/bin
+
+*/3 * * * * cd /app/${BLOCKCHAIN}/crontab/kuma && /bin/bash -x tendermint-check-active >>  /app/${BLOCKCHAIN}/logs/crontab.log
+*/3 * * * * cd /app/${BLOCKCHAIN}/crontab/kuma && /bin/bash tendermint-check-sync >>  /app/${BLOCKCHAIN}/logs/crontab.log
+*/1 * * * * cd /app/${BLOCKCHAIN}/crontab/kuma && /bin/bash -x tendermint-check-jail >>  /app/${BLOCKCHAIN}/logs/crontab.log
+
