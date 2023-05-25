@@ -16,7 +16,7 @@ TOKEN=""
 CHECK_JQ=`command -v jq`
 if [ $? -eq 1 ]
 then
-   echo "Install bc | apt install jq or yum install bjq |"
+   echo "Install bc | apt install jq or yum install jq |"
    exit
 fi
 
