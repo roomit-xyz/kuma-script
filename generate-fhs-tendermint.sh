@@ -10,3 +10,19 @@ source \$ZSH/oh-my-zsh.sh
 export PATH="\${PATH}:${HOME}/bin"
 EOF
 source ${HOME}/.zshrc
+cat > ${HOME}/systemd/init.service<<EOF
+[Unit]
+Description=init Cosmos daemon
+After=network-online.target
+
+[Service]
+User=
+Group=
+ExecStart=
+Restart=on-failure
+RestartSec=3
+LimitNOFILE=4096
+
+[Install]
+WantedBy=multi-user.target
+EOF
